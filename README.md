@@ -1,7 +1,8 @@
 # SEDOL
 Valide a SEDOL code
 
-function checkSedol(text){
+
+> function checkSedol(text){
 	var weight = [1, 3, 1, 7, 3, 9, 1];
 	try {
 		var input = text.substr(0,6);
@@ -12,7 +13,7 @@ function checkSedol(text){
 	}       
 	return false;
     
-	function sedol_check_digit(char6) {
+> function sedol_check_digit(char6) {
 	    if (char6.search(/^[0-9BCDFGHJKLMNPQRSTVWXYZ]{6}$/) == -1){
 	        throw "Invalid SEDOL number '" + char6 + "'";
 	    }
